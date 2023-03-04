@@ -26,7 +26,6 @@ justify-content: space-between;
 align-items: center;
 width: ${props => props.width ?? '0'};
 min-width: ${props => props.width ?? '0'};
-padding: 8px;
 background: var(--blue);
 color: var(--white);
 font-size: var(--fs3);
@@ -38,8 +37,8 @@ position: absolute;
 top: 0;
 left: 0;
 height: 100%;
-width: 5px;
-min-width: 5px;
+width: 4px;
+min-width: 4px;
 background: var(--red);
 transition: var(--trans);
 border-top-left-radius: 6px;
@@ -56,6 +55,8 @@ border-bottom-right-radius: 6px;
 `
 const TaskContent = styled.div`
 flex-grow: 100;
+width: 100%;
+padding: 8px;
 overflow: hidden;
 `
 const TaskName = styled.span`

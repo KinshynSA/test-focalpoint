@@ -73,7 +73,7 @@ export default function GanttChart(){
 
     useEffect(() => {
         if(dateFormat === 'months'){
-            setCellWidth(5);
+            setCellWidth(10);
         } else {
             setCellWidth(40);
         }
@@ -102,7 +102,7 @@ export default function GanttChart(){
                             isChecked={dateFormat === 'days'}
                             onChange={() => {
                                 if(dateFormat === 'days'){
-                                    setDateFormat('month')
+                                    setDateFormat('months')
                                 } else {
                                     setDateFormat('days')
                                 }
